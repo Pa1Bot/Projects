@@ -1,5 +1,5 @@
 
-public class CheckedException
+public class CheckedException_5
 {
 
 	public static void main(String[] args) throws Exception

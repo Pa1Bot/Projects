@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Catching_All_TheExceptions_AtTheEnd
+public class Catching_All_TheExceptions_AtTheEnd_2
 {
 
 	public static void main(String[] args) 

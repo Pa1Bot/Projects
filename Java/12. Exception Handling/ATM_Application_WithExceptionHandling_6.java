@@ -81,7 +81,7 @@ class Bank
 }
 
 
-public class ATM_Application_WithExceptionHandling
+public class ATM_Application_WithExceptionHandling_6
 {
 
 	public static void main(String[] args) 

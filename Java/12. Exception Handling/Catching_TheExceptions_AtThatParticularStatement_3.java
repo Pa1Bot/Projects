@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Catching_TheExceptions_AtThatParticularStatement
+public class Catching_TheExceptions_AtThatParticularStatement_3
 {
 
 	public static void main(String[] args) 

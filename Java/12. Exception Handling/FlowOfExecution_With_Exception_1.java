@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FlowOfExecution_With_Exception
+public class FlowOfExecution_With_Exception_1
 {
 
 	public static void main(String[] args) 

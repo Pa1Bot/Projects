@@ -96,7 +96,7 @@ class RTO
 }
 
 
-public class DrivingLicense_Application_WithExceptionHandling{
+public class DrivingLicense_Application_WithExceptionHandling_7{
 
 	public static void main(String[] args) {
 		
