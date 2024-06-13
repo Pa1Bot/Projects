@@ -1,10 +1,26 @@
 import java.util.Scanner;
 
-class Banking implements Runnable
+class MultipleTask implements Runnable
 {
-	
-	
 	public void run()
+	{
+		
+		String tname=Thread.currentThread().getName();
+		if(tname.equals("BANK"))
+		{
+			banking();
+		}
+		else if(tname.equals("PRINTN"))
+		{
+			printingNum();
+		}
+		else
+		{
+			printingAlpha();
+		}
+		
+	}
+	public void banking()
 	{
 		System.out.println("Activity 1 started");
 		
@@ -21,11 +37,7 @@ class Banking implements Runnable
 		System.out.println("**************************************************");
 	}
 	
-}
-
-class PrintingNum implements Runnable
-{
-	public void run()
+	public void printingNum()
 	{
 		System.out.println("Activity 2 started");
 		for(int i=0;i<5;i++)
@@ -42,14 +54,9 @@ class PrintingNum implements Runnable
 		System.out.println("Activity 2 ended");
 		
 		System.out.println("**************************************************");
-
-		
 	}
-}
-
-class PrintingAlpha implements Runnable
-{
-	public void run()
+	
+	public void printingAlpha()
 	{
 		System.out.println("Activity 3 started");
 		
@@ -67,34 +74,37 @@ class PrintingAlpha implements Runnable
 		
 		System.out.println("Activity 3 ended");
 	}
+	
 }
 
-public class Started_IndependentThreads_Using_RunnableInterface_2
-{
 
-	public static void main(String[] args)throws Exception 
+
+public class InDependentThreads_Using_ThreadClass_With_SingleRunMethod_4 {
+
+	public static void main(String[] args) 
 	{
+		MultipleTask mt=new MultipleTask();
 		
+		Thread t1=new Thread(mt);
 		
-		Banking b=new Banking();
+		Thread t2=new Thread(mt);
 		
+		Thread t3=new Thread(mt);
 		
-		PrintingNum pn=new PrintingNum();
-		
-		
-		PrintingAlpha pa=new PrintingAlpha();
-		
-		Thread t1=new Thread(b);
-		
-		Thread t2=new Thread(pn);
-		
-		Thread t3=new Thread(pa);
+		t1.setName("BANK");
+		t2.setName("PRINTN");
+		t3.setName("PRINTA");
 		
 		t1.start();
 		t2.start();
 		t3.start();
 		
 		
+		
+		
+
+
+
 	}
 
 }

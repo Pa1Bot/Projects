@@ -71,7 +71,7 @@ class PrintingAlpha1 extends Thread
 	}
 }
 
-public class Started_DependentThreads_Using_ThreadClass_3
+public class DependentThreads_Using_ThreadClass_With_MultipleRunMethods_3
 {
 
 	public static void main(String[] args)throws Exception 
