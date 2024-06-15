@@ -73,7 +73,9 @@ class PrintingAlpha1 extends Thread
 
 public class DependentThreads_Using_ThreadClass_With_MultipleRunMethods_3
 {
-
+//Here we are not creating any Threads by seperately creating the objects of Thread class because the classes
+	//are already extending the Thread class, it is like if we create object of that class indirectly creates an object
+	//of Thread class as it is extending it. So here we are just using start method to give controller to TS.
 	public static void main(String[] args)throws Exception 
 	{
 		
@@ -99,7 +101,9 @@ public class DependentThreads_Using_ThreadClass_With_MultipleRunMethods_3
 		System.out.println(b.isAlive());//true
 		System.out.println(pn.isAlive());//true
 		System.out.println(pa.isAlive());//true
-		
+
+		//We are using the join method, it simply says the main Thread to wait until the “b” Threads completes
+		// the work joins you back’
 		b.join();
 		pn.join();
 		pa.join();
@@ -110,7 +114,7 @@ public class DependentThreads_Using_ThreadClass_With_MultipleRunMethods_3
 		System.out.println("Main thread completed work");
 		
 		
-		
+		//Instead of start method if we are calling run method manually then it will behave like a single Threaded application.
 //		b.run();
 //		pn.run();
 //		pa.run(); // progm will behave like single threaded programming

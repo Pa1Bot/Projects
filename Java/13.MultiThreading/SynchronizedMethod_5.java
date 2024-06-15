@@ -1,6 +1,11 @@
 
 class Bathroom implements Runnable
 {
+	//It is like applying lock to this method if 1thread gets a chance then other Threads cannot execute it. It
+	//looks like a single threaded programming but it is not completely single threaded programming , it is just
+	// that we are controlling the threads.
+	//Here we are achieveing a scenario where in, If a single resource has to be used by multiple threads, we are doing
+	//it by applying lock to the method /resource using synchronized keyword.
 	synchronized public void run()
 	{
 		try
@@ -24,7 +29,7 @@ class Bathroom implements Runnable
 	
 }
 
-public class SyschronizedMethod_5
+public class SynchronizedMethod_5
 {
 
 	public static void main(String[] args) 
