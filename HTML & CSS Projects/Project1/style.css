@@ -1,0 +1,82 @@
+/* styling the container components */
+.container {
+  width: 1100px;
+  border: 2px solid black;
+  margin: 20px auto;
+  font-family: sans-serif;
+  padding: 30px;
+  background-color: lightyellow;
+  color: darkgreen;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Styling the header section */
+#logo {
+  width: 8%;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+header h2 {
+  display: inline;
+  float: right;
+  font-size: 25px;
+}
+
+/* Styling Navigation section */
+nav {
+  text-align: center;
+  padding: 15px 0px;
+  background-color: rgb(171, 246, 171);
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+nav a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 30px;
+}
+#portfolio {
+  cursor: not-allowed;
+  color: grey;
+}
+
+/* Styling side content */
+aside {
+  width: 30%;
+  float: left;
+}
+aside li {
+  margin: 10px;
+}
+aside ul {
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+/* Styling main content */
+main {
+  width: 70%;
+  float: right;
+}
+main h1 {
+  font-weight: bold;
+  font-size: 34px;
+}
+main img {
+  height: 350px;
+  width: 750px;
+  border: 2px solid darkgreen;
+}
+main p {
+  padding: 10px 0;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+/* Styling footer content */
+footer {
+  text-align: center;
+  clear: both;
+}
