@@ -1,0 +1,27 @@
+header{
+    text-align: center;
+    font-family: cursive;
+    color: rgb(115, 64, 2);
+    box-shadow: 10px 10px 5px olivedrab;
+}
+#sec1{
+    color: rgb(237, 214, 182);
+    background-color:rgb(63, 102, 1);
+    font-size: 18px;
+}
+#sec2{
+    color:rgb(129, 39, 6);
+    background-color: rgb(223, 238, 181);
+    font-size: 18px;
+}
+#list1{
+    list-style-type: square;
+}
+#list2{
+    list-style-type:upper-alpha;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
