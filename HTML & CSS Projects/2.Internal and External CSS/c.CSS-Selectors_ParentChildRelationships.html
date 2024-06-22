@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* a[title]{
+            color:red;
+        }
+        a[title="Facebook Link"]{
+            color:red;
+        }
+        a[title~="Amazon"]{
+            color:red;
+        } */
+
+        a:hover {
+            color: yellowgreen;
+            cursor: crosshair;
+        }
+
+        a[title]:hover {
+            color: red;
+            cursor: grab;
+        }
+
+        a:active {
+            color: purple;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        #one::before {
+            content: 'This is new info';
+            color: red;
+            background-color: black;
+            /* width: 20px;
+            height: 20px; */
+            display: inline-block;
+        }
+
+        /* Parent chidren relationships */
+        /* All the chidren tags of main will be selected */
+        main p {
+            color: red;
+        }
+
+        main>p {
+            color: red;
+        }
+
+        #outer~p {
+            color: purple;
+        }
+
+        /* Adjacent Selector i.e right after the selected tag */
+        #outer+p {
+            color: green;
+        }
+        /* To select h2 inner paragraph */
+        main>div>h1+h2{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+        <p id="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab velit aliquam consequatur similique
+            deleniti, dignissimos, voluptatibus quas magni, sapiente voluptates eveniet quasi deserunt quo odit nemo
+            aspernatur atque qui sunt quis quidem. Ipsa iure veritatis magnam sunt quas delectus tenetur eveniet libero
+            laboriosam. Illum ad adipisci ea exercitationem sequi. Fugiat dolor assumenda magnam officiis ipsa?</p>
+    </header>
+    <nav>
+        <a title="Facebook Link" href="https://www.facebook.com">Facebook</a>
+        <a title="Amazon Link" href="https://www.amazon.com">Amazon</a>
+        <a href="https://www.netflix.com">Netflix</a>
+        <a href="https://www.google.com">Google</a>
+    </nav>
+    <main>
+        <h2 id="outer">Outer Paragraph</h2>
+        <p>This is outer paragraph 1</p>
+        <p>This is outer paragraph 2</p>
+        <p>This is outer paragraph 3</p>
+        <div>
+            <h1></h1>
+            <h2>Inner Paragraph</h2>
+            <p>This is inner paragraph 1</p>
+            <p>This is inner paragraph 2</p>
+            <p>This is inner paragraph 3</p>
+            <h2>end</h2>
+            <div>
+                <p>This is inner-inner paragraph 1</p>
+            </div>
+        </div>
+        <p>This is outer paragraph 4</p>
+    </main>
+</body>
+
+</html>
