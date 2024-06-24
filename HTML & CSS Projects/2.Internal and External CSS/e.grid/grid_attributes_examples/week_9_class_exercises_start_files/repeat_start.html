@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    The code in this example is adapted from Andrew, R. (2016, September 29). Grid by Example: repeat [Video]. YouTube. https://www.youtube.com/watch?v=XW-l6ysDZyM 
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defining a Grid</title>
+    <style>
+        .grid{
+             display: grid;
+             /* pa1 */
+             /* grid-template-columns: 1fr 1fr 1fr; */
+             grid-template-columns: repeat(3,1fr);
+
+             /* grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr; 
+             grid-template-columns: repeat(3,1fr 2fr);*/
+             border: 2px soild black;
+             background-color: beige;
+             grid-gap: 20px;
+        }
+
+        /* The following is just some basic CSS to create boxes */
+        .grid div{
+            border: 1px solid rgb(0, 95,105);
+            border-radius: 3px;
+            background-color: rgba(0,95,107, 0.8);
+            padding: 0.2em 2em;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .grid div:nth-child(odd){
+            border: 1px solid rgb(0,180,204);
+            background-color: rgba(0,180,204, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

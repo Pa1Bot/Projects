@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    The code in this example is adapted from Andrew, R. (2016, September 29). Grid by Example: minmax() [Video]. YouTube. https://www.youtube.com/watch?v=boNNYrUd-w0 
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defining a Grid</title>
+    <style>
+        .grid{
+             display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             grid-gap: 20px;
+            /* pa1 */
+             grid-auto-rows: minmax(200px, auto);
+             border: 2px soild black;
+             background-color: beige;
+        }
+
+        /* The following is just some basic CSS to create boxes */
+        .grid div{
+            border: 1px solid rgb(0, 95,105);
+            border-radius: 3px;
+            background-color: rgba(0,95,107, 0.8);
+            padding: 0.2em 2em;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .grid div:nth-child(odd){
+            border: 1px solid rgb(0,180,204);
+            background-color: rgba(0,180,204, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque tenetur, minus excepturi eaque dolorum suscipit unde aperiam earum quibusdam, iusto nesciunt, vitae dolorem animi assumenda quod fugit numquam aspernatur nisi. Perspiciatis, totam. Non, maiores quod incidunt cum hic adipisci, eveniet asperiores qui, facilis mollitia dolor laboriosam. Rerum est voluptatibus dolor, quas fuga dolorum nisi facere. Distinctio asperiores saepe non, eveniet, libero blanditiis amet minus pariatur molestias fugit ducimus quasi ex aliquam deserunt sint facilis maiores doloremque ipsum ut, quibusdam officiis dolor maxime optio? Nesciunt hic numquam quis aliquam ducimus molestiae eaque! Aliquid perferendis reiciendis earum at velit, dolor ut, ipsa aspernatur vitae dignissimos temporibus accusamus consequuntur saepe atque dolorem consequatur minus.</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

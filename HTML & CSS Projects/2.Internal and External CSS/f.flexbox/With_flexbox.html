@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Getting Started</title>
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      .container {
+        width: 600px;
+        min-height: 600px;/* Pa1 */
+        margin: 1rem auto;
+        background-color: #eee;
+        
+        /* Pa1 */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;/* Justify content is for main axis, where as align items is for cross axis*/
+        /* align-items: center; */
+      }
+
+      /* inside .container */
+      header {
+        background-color: #bada55;
+        padding: 1rem;
+
+        /* Pa1 */
+        /* flex: 1; */
+        flex-basis: 20%;
+      }
+      .content {
+        background-color: #bad;
+
+        /* Pa1 */
+        /* flex: 2; */
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      footer {
+        background-color: #badaff;
+        padding: 1rem;
+
+        /* Pa1 */
+        /* flex: 1; */
+        flex-basis: 10%;
+      }
+
+      /* inside .content */
+      nav {
+        background-color: gold;
+        padding: 10px;
+        box-sizing: border-box;
+
+        /* Pa1 */
+        flex: 1.2;
+      }
+      main {
+        background-color: khaki;
+        padding: 10px;
+        box-sizing: border-box;
+
+        /* Pa1 */
+        flex: 3;
+      }
+      aside {
+        background-color: cornflowerblue;
+        padding: 10px;
+        box-sizing: border-box;
+
+        /* Pa1 */
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Flexbox Getting Started</h1>
+      </header>
+
+      <section class="content">
+        <nav>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+          </ul>
+        </nav>
+
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            quas in, eum maiores quos animi voluptatibus nam culpa rem, dolorum
+            eos ipsam consequuntur incidunt voluptates illo quo provident esse
+            molestiae.
+          </p>
+          <p>
+            Quis odio quaerat amet ex recusandae temporibus dolores aperiam eum
+            voluptas quidem illum neque incidunt asperiores, eaque ducimus quia
+            veritatis facere autem a saepe quasi libero animi ullam! Illo,
+            blanditiis.
+          </p>
+        </main>
+
+        <aside>
+          <p>
+            Vitae dignissimos dolores enim excepturi sed alias, commodi, quis
+            perspiciatis doloremque magnam quod exercitationem, ullam officia
+            quaerat mollitia voluptates aperiam deleniti modi.
+          </p>
+        </aside>
+      </section>
+
+      <footer>
+        <p>&copy; 2018 Turkey Stuff Inc.</p>
+      </footer>
+    </div>
+  </body>
+</html>

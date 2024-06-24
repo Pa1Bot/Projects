@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    The code in this example is adapted from Andrew, R. (2016, December 13). Layout with grid-template-areas [Video]. YouTube. https://www.youtube.com/watch?v=RssSS_xhv2E
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defining a Grid</title>
+    <style>
+        .grid{
+             display: grid;
+             grid-gap: 20px;
+        }
+
+        @media (min-width: 640px){
+            .grid{
+                grid-template-columns: 2fr 4fr;
+                /* pa1 */
+                grid-template-areas: 
+                'hd hd'
+                'aside main'
+                'aside footer'
+                ;
+            }   
+        }
+        header{
+            grid-area: hd;
+        }
+        aside {
+            grid-area: aside;
+        }
+        article {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+
+
+
+        /* The following is just some basic CSS to create boxes */
+        .grid header, .grid aside, .grid footer, .grid article{
+            border: 1px solid rgb(0, 95,105);
+            border-radius: 3px;
+            background-color: rgba(0,95,107, 0.8);
+            padding:  1em 2em;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .grid article{
+            border: 1px solid rgb(0,180,204);
+            background-color: rgba(0,180,204, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header>Header</header>
+        <article>
+            <h1>Article</h1>
+            <p>
+                Content for my excellent article would go here.
+            </p>
+        </article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
