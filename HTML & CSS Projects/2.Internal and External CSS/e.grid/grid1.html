@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: auto;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr 
+            grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 
+            */
+            
+            gap: 20px;
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            
+            /* grid-template-rows: 200px 300px 100px; */
+            /* grid-auto-rows: 200px; There is flaw where in if a item5 in belowlist has more data it will get overflowed so w will use below to take min of 200px space but if content is more auto size it*/
+            grid-auto-rows: minmax(200px, auto);
+            padding: 100px;
+        }
+        .item:nth-of-type(even){
+            background-color: yellowgreen;
+            border: 2px solid black;
+            background-image: url(images/a.jpg);
+            background-size: cover;
+            background-position: center;
+            /* margin: 50px; */
+        }
+        .item:nth-of-type(odd){
+            background-color: aqua;
+            border: 2px solid black;
+            background-image: url(images/b.jpg);
+            background-size: cover;
+            background-position: center;
+            /* margin: 10px; */
+        }
+        .item:nth-child(1){
+            background-color: brown;
+            border: 2px solid black;
+            background-image: url(images/c.jpg);
+            background-size: cover;
+            background-position: center;
+
+            /* grid-column-start: 1;
+            grid-column-end: 3; 
+            grid-row-start: 1;
+            grid-row-end: 3; */
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<!-- .item{Item $}*9 -->
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+<div class="item">Item 4</div>
+<div class="item">Item 5</div>
+<!-- <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sit ratione delectus tempore pariatur voluptate hic error officia velit earum qui numquam, explicabo quasi maxime perspiciatis nostrum consectetur adipisci laboriosam nobis id autem ducimus doloremque libero? Nemo temporibus ducimus error alias, nihil, voluptatum perferendis quis eos perspiciatis animi sint nulla ad labore nostrum totam explicabo exercitationem suscipit repellat aut quibusdam voluptas dolorum excepturi culpa? Omnis assumenda esse eius culpa ducimus voluptatibus quam provident tempore magnam rerum laudantium obcaecati, dolorem nam consequatur beatae dolor, maxime neque. Laudantium nam consequuntur accusamus est laborum repudiandae quidem incidunt neque obcaecati rerum. Vero repellat quo ut natus. Mollitia sint nisi voluptatum commodi earum consequuntur possimus aspernatur illum, voluptatem dolorem similique itaque repellat obcaecati necessitatibus ratione laudantium esse magnam. Blanditiis perspiciatis consequatur nihil, architecto, veritatis beatae reprehenderit sunt quas, velit officiis deleniti repellat ad quisquam deserunt quibusdam iste sequi a eveniet sed magnam ullam asperiores obcaecati.</div> -->
+<div class="item">Item 6</div>
+<div class="item">Item 7</div>
+<div class="item">Item 8</div>
+<div class="item">Item 9</div>
+    </div>
+    
+</body>
+</html>
