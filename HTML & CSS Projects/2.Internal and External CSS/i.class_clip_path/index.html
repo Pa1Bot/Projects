@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .items:nth-child(1) {
+        background-image: url(./images/bird1.jpg);
+        background-size: cover;
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+      }
+      .items:nth-child(2) {
+        background-image: url(./images/bird2.jpg);
+        background-size: cover;
+        /* pa1 */
+        background-position: center;
+        /* clip-path: circle(200px at 230px 220px); */
+        /* clip-path: polygon(0 0,100% 0,100% 100%,0 100%); */
+        /* clip-path: polygon(0 0,50% 25%,100% 0,75% 50%,100% 100%,50% 75%,0 100%,25% 50%); */
+        /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+        animation-name: clipAnimation;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes clipAnimation {
+        0%{
+          clip-path: polygon(0% 0%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+        }
+        10%{
+          clip-path: polygon(50% 0%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+}
+        20%{
+          clip-path: polygon(50% 0%, 61% 35%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+        }
+        30%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+}
+        40%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0);
+        }
+        50%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 0 0, 0 0, 0 0, 0 0, 0 0);
+}
+        60%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 0 0, 0 0, 0 0, 0 0);
+        }
+        70%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 0 0, 0 0, 0 0);
+}
+        80%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 0 0, 0 0);
+        }
+        90%{
+          lip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 0 0);
+}
+        100%{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+      }
+
+      .items:nth-child(3) {
+        background-image: url(./images/bird3.jpg);
+        background-size: cover;
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+      }
+      /* pa1 */
+      .items{
+        height:500px;
+      }
+      .content{
+        margin-top: 200px;
+        height:200px;
+        width: 200px;
+        border: 2px solid black;
+        position: relative;
+        animation-name: myanimation;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 2;
+        animation-delay: 2s;
+        margin-bottom: 500px;
+      }
+      @keyframes myanimation {
+        0%{
+          background-color: white;
+          left: 0;
+          top: 0;
+          border-radius: 0 0 0 0;
+        }
+        25%{
+          background-color: red;
+          left: 300px;
+          top: 0;
+          border-radius: 50% 0 0 0;
+          height: 300px;
+          width: 300px;
+        }
+        50%{
+          background-color: green;
+          left: 300px;
+          top: 300px;
+          border-radius: 50% 50% 0 0;
+          height: 400px;
+          width: 400px;
+        }
+        75%{
+          background-color: black;
+          left: 0;
+          top: 300px;
+          border-radius: 50% 50% 50% 0;
+          height: 500px;
+          width: 500px;
+        }
+        100%{
+          background-color: black;
+          left: 0;
+          top: 0;
+          border-radius: 50% 50% 50% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items"></div>
+      <div class="items"></div>
+      <div class="items"></div>
+    </div>
+
+    <div class="content"></div>
+  </body>
+</html>
