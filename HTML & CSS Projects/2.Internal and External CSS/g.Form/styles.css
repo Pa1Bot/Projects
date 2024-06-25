@@ -1,0 +1,72 @@
+
+.contact form{
+    margin: 50px 0 20px 380px ;
+    width: 630px;
+}
+.fieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.field{
+    margin: 10px 5px;
+    padding: 5px;
+}
+legend{
+    color: red;
+}
+.field label{
+    width: 70px;
+    display: inline-block;
+    vertical-align: top ;
+}
+.field input{
+    width: 170px;
+    border: 2px solid black;
+}
+textarea, input{
+    border: 2px solid black;
+}
+.field textarea{
+    width: 170px;
+    height: 80px;
+}
+
+.contact fieldset{
+    border: 2px solid red;
+    margin: 0%;
+}
+.contact fieldset legend{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#Date{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#survey{
+    margin: 20px 0 0 10px;
+}
+#survey label{
+    margin-bottom: 20px;
+}
+#lab{
+    margin-bottom: 5px;
+}
+.survey{
+    margin: 7px 0 7px 0;
+}
+.submit{
+    border: 2px solid red;
+    padding: 20px;
+}
+.submit button{
+    padding: 3px 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    background-color: white;
+}
+#sub{
+    margin-left: 235px;
+}

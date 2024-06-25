@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+    <main class="contact">
+        <form action="">
+            <div class="fieldset">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="field">
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name" id="Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" required>
+                    </div>
+                    <div class="field">
+                        <label for="Phone">Phone</label>
+                        <input type="text" name="Phone" id="Phone">
+                    </div>
+                    <div class="field">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" cols="20" rows="3" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Instructions</legend>
+                    <div class="field">
+                        <label for="coupon">Coupon</label>
+                        <input type="number" name="coupon" id="coupon" minlength="4">
+                    </div>
+                    <div class="field" id="Date">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div id="survey">
+                        <label for="survey" id="lab">Would you like to take a quick survey?</label>
+                        <div class="survey">
+                            <input type="radio" name="survey" id="no">
+                            <label for="no">No</label>
+                        </div>
+                        <div class="survey">
+                            <input type="radio" name="survey" id="never">
+                            <label for="never">Never</label>
+                        </div>
+                        <div class="survey">
+                            <input type="radio" name="survey" id="NEVER">
+                            <label for="NEVER">NEVER with capital letters</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="submit">
+                <div>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+                <div >
+                    <button type="submit" id="sub">Submit Request</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
