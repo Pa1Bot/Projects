@@ -1,0 +1,96 @@
+.container{
+    width: 900px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 20px auto;
+    /* padding: 0 20px; */
+    color: green;
+}
+header img{
+    width: 78px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid green;
+  float: left;
+}
+header h2 {
+    color: darkgreen;
+    display: inline;
+    font-size: 25px;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 2px 1px yellowgreen;
+    padding: 10px;
+    margin: 10px;
+  }
+  header p{
+    font-weight: bold;
+    color: darkgreen;
+  }
+  h1{
+    font-size: 38px;
+  }
+  aside h2{
+    color: blue;
+  }
+  #subHead1{
+    color: red;
+  }
+  #subHead2{
+    color: peru;
+  }
+  #subHead3{
+    color: orange;
+  }
+
+aside li a{
+    color: green;
+    font-weight: bold;
+}
+aside li a:hover{
+    color: red;
+    cursor: pointer;
+}
+main h3 a{
+    color: blueviolet;
+}
+main a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+#mainImg{
+    width:100%;
+    padding: 0%;
+}
+li{
+    height: 1.5;
+    width: 36px;
+}
+footer{
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+header{
+    border: 2px solid green;
+    padding: 10px;
+}
+aside{
+    float: left;
+    width: 30%;
+}
+
+#right{
+    clear: both;
+    float: right;
+    width: auto;
+}
+footer{
+    clear: both;
+} 
+#mainData{
+    text-align: left;
+    /* padding: 5px;     */
+}
+
