@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Awesome Florists</title>
+</head>
+
+<body>
+    <header>
+        <h1>Awesome Florists</h1>
+    </header>
+
+    <nav>
+        <!-- First level UL for the main -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Flowers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li>
+                <a href="order.html">Order</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="">Polka Posies</li></a>
+                    <li><a href="">Red Roses</li></a>
+                    <li><a href="">Rainbow Orchid</li></a>
+                    <li><a href="">Charming Lavendar</li></a>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact">
+        <h2>Contact Us</h2>
+        <p>Please feel free to fill out the form below to send us your custom request for flowers.</p>
+        <!-- Add the form below -->
+        <form action="">
+            <fieldset>
+                <legend>From</legend>
+                <div class="field">
+                    <label for="fromName">Name:</label>
+                    <input type="text" name="fromName" id="fromName">
+                </div>
+                <div class="field">
+                    <label for="fromPhone">Phone:</label>
+                    <input type="text" name="fromPhone" id="fromPhone">
+                </div>
+                <div class="field">
+                    <label for="fromEmail">Email:</label>
+                    <input type="text" name="fromEmail" id="fromEmail" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="20" rows="3"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>To</legend>
+                <div class="field">
+                    <label for="toName">Name:</label>
+                    <input type="text" name="toName" id="toName">
+                </div>
+                <div class="field">
+                    <label for="Address">Address:</label>
+                    <input type="text" name="Address" id="Address">
+                </div>
+                <div class="field">
+                    <label for="delivery">Delivery Date:</label>
+                    <input type="date" name="delivery" id="delivery" required>
+                </div>
+                <div class="field">
+                    <label for="occasion">Occasion:</label>
+                    <select name="occasion" id="">
+                        <option value="">--Select an option--</option>
+                        <optgroup label="Personal">
+                            <option value="Valentines">Valentines</option>
+                            <option value="Anniversary">Anniversary</option>
+                        </optgroup>
+                        <optgroup label="Professional">
+                            <option value="Holiday">Holiday</option>
+                            <option value="Birthday">Birthday</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Add 25$ awesome gift card</legend>
+                <div class="gift">
+                    <input type="radio" name="gift" id="giftYes">
+                    <label for="giftYes">Yes</label>
+                </div>
+                <div class="gift">
+                    <input type="radio" name="gift" id="giftNo">
+                    <label for="giftNo">No</label>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <div>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to the Terms and conditions</label>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <aside>
+        <h3>Our Address</h3>
+        <!-- We will work on this later -->
+    </aside>
+
+    <footer>
+        <nav>
+            <!-- First level UL only for the footer -->
+            <ul>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        &copy; Copyright Conestoga College, 2021
+    </footer>
+</body>
+
+</html>
