@@ -1,0 +1,187 @@
+<!-- Name: Pavan Kumar Modugumudi/ Student No: 8872364 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deforestation</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div>
+        <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+        <h1>Forests - Pavan Kumar Modugumudi - P.modugumudi2364@conestogac.on.ca</h1>
+        </div>
+    </header>
+    <nav>
+        <!-- First level UL for the main -->
+        <ul>
+            <li>
+                <a href="index.html">Info</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="index.html#role">Roles</a></li>
+                    <li><a href="index.html#components">Components</a></li>
+                    <li><a href="index.html#layers">Layers</a></li>
+                    <li><a href="index.html#types">Types</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="deforestation.html">Deforestation</a>
+                <!-- Second level UL for the sub menu -->
+                <ul>
+                    <li><a href="deforestation.html#deforestationVideo">Video</a></li>
+                    <li><a href="deforestation.html#tableid">Table</a></li>
+                    <li><a href="deforestation.html#formid">Form</a></li>
+                </ul>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <img src="images/deforestationImage.jpg" alt="DeforestationImage">
+        <div class="herotext">
+            <h2>Deforestation</h2>
+        </div>
+        </div>
+        <div class="innerPageSection1">
+            <div class="innerPageSection1Text">
+                <h3>Causes of Deforestation:</h3>
+                <p>Deforestation in many countries—both naturally occurring and human-induced—is an ongoing issue. Between 2000 and 2012, 2.3 million square kilometres (890,000 sq mi) of forests around the world were cut down. Deforestation and forest degradation continue to take place at alarming rates, which contributes significantly to the ongoing loss of biodiversity.</p>
+                <p>Deforestation is caused by following factors i.e Agriculture, Livestock ranching, Wood industry, Economic development, Mining, Climate change, Military causes</p>
+            </div>
+            <div class="innerPageSection1Video" id="deforestationVideo">
+                <video src="media/DeforestationVideo.mp4" controls poster="images/deforestationVideoPoster.jpg"></video>
+            </div>
+        </div>
+        <div class="innerPageTable" id="tableid">
+            <h3>Changes in forest carbon stock by region(Figures in gigatons):</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>1990</th>
+                        <th>2020</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Europe (including Russia)</td>
+                        <td>158.7</td>
+                        <td>172.4</td>
+                    </tr>
+                    <tr>
+                        <td>North America</td>
+                        <td>136.6</td>
+                        <td>140.0</td>
+                    </tr>
+                    <tr>
+                        <td>Africa</td>
+                        <td>94.3</td>
+                        <td>80.9</td>
+                    </tr>
+                    <tr>
+                        <td>South and Southeast Asia combined</td>
+                        <td>45.8</td>
+                        <td>41.5</td>
+                    </tr>
+                    <tr>
+                        <td>Oceania</td>
+                        <td>33.4</td>
+                        <td>33.1</td>
+                    </tr>
+                    <tr>
+                        <td>Central America</td>
+                        <td>5.0</td>
+                        <td>4.1</td>
+                    </tr>
+                    <tr>
+                        <td>South America</td>
+                        <td>161.8</td>
+                        <td>144.8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="innerPageForm" id="formid">
+            <h3>Join our community for saving forests by submitting your details</h3>
+            <form action="" id="form1">
+                <div class="field">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <div class="field">
+                    <label for="Email">Email:</label>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div class="field">
+                    <label for="location">Select your location:</label>
+                    <select name="location" id="">
+                        <option value="">--Select an option--</option>
+                        <optgroup label="Ontario">
+                            <option value="Toronto">Toronto</option>
+                            <option value="Kitchener">Kitchener</option>
+                            <option value="Waterloo">Waterloo</option>
+                        </optgroup>
+                        <optgroup label="Quebec">
+                            <option value="Montreal">Montreal </option>
+                            <option value="Laval">Laval</option>
+                            <option value="Gatineau">Gatineau</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="message">Tell us more about yourself:</label>
+                    <textarea name="message" id="message" cols="20" rows="3"></textarea>
+                </div>
+                <div class="check1">
+                    <label for="sevice">Please select the service options you are intrested in</label>
+                    <div class="sevice">
+                        <input type="checkbox" name="Campaign" id="Campaign">
+                        <label for="Campaign">Campaigns</label>
+                    </div>
+                    <div class="sevice">
+                        <input type="checkbox" name="Donation" id="Donation">
+                        <label for="Donation">Donations</label>
+                    </div>
+                    <div class="sevice">
+                        <input type="checkbox" name="Promotion" id="Promotion">
+                        <label for="Promotion">Promotions</label>
+                    </div>
+                </div>
+                <div class="radio1">
+                    <label for="gender">Please select your gender</label>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="but">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="contactUs.html#PrivacyPolicy">Privacy Policy</a></li>
+                <li><a href="contactUs.html#Terms">Terms and Conditions</a></li>
+                <li><a href="contactUs.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        &copy; Copyright - Pavan Kumar Modugumudi - P.modugumudi2364@conestogac.on.ca
+    </footer>
+</body>
+</html>
