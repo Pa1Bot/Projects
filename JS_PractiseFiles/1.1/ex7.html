@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex7</title>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore animi, iusto dolorum ad ipsa adipisci excepturi sed harum culpa quasi dolor a voluptas quidem facere cum odit, molestias accusantium? Consectetur!</p>
+    <p id="output"></p>
+    
+    <script>
+        var greeting = 'Good morning'; // string
+        var uname = prompt('Please tell your name.'); // is treated as a string
+        var welcome = `Welcome, ${greeting} ${uname}. It is a bright day today.`; 
+        //document.write(welcome); // just another way to output
+        document.getElementById('output').innerHTML = welcome; // output in a specific HTML element
+    </script>
+</body>
+</html>
