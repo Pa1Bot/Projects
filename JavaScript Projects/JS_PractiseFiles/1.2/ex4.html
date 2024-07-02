@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex4</title>
+    <script>
+        // Internal/Embedded
+        // Functions
+        // Add two numbers
+        function addNum() // declaration // no return type needed
+        { // definition
+            var a = prompt('Enter the first number:'); // input is treated as a string
+            // ideally you should validate input before converting
+            a = parseInt(a); // convert to a number
+            var b = prompt('Enter the second number');
+            b = parseInt(b); // convert to a number 
+            var sum = a + b;
+            alert(`The sum is ${sum}`);  // replaces variables
+            alert('The sum is ${sum}');  // does not replace variables
+            alert("The sum is ${sum}");  // does not replace variables
+
+            alert('Congratulation! It worked.'); // single quote
+            alert("Congratulation! It worked."); // double quote
+            alert(`Congratulation! It worked.`); // back quote
+            // return is optional
+            /*
+                single quote = '
+                double quote = "
+                back quote   = `
+            */
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addNum()">Add</button>
+</body>
+</html>
