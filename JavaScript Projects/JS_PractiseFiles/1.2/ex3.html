@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <script>
+        // Functions
+        // Add two numbers
+        function addNum() // declaration // no return type needed
+        { // definition
+            var a = prompt('Enter the first number:'); // input is treated as a string
+            // ideally we should validate input before converting
+            a = parseInt(a); // convert to a number
+            var b = prompt('Enter the second number');
+            b = parseInt(b); // convert to a number 
+            var c = a + b;
+            alert(`The sum is ${c}`);
+            // return is optional
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addNum()">Add</button>
+</body>
+</html>
