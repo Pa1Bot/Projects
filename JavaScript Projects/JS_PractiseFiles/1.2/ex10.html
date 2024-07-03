@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+    <script>
+        // let and var
+        // let is local
+        // var is global 
+        function addNum() // declaration // no return type needed
+        { // definition
+            var a = 10; // local variable
+            var b = 20;
+            var c = a + b;
+            alert(c);
+            // return is optional
+            alert('From within the function: ' + a); // works!
+        }
+        addNum(); // function call
+        alert(a); // a is local to function addNum and not available here.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
