@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+
+<body>
+    <form name="f1" ; action="mailto:pa1.modugumudi@gmail.com" method="post" enctype="text/plain">
+
+        <input type="radio" id="html" name="fav_language" value="HTML" >
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS" disabled>
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript" >
+        <label for="javascript">JavaScript</label><br>
+    <button  onclick="t();">Text</button>
+        <input type="submit" name="sub" value="Send">
+
+    </form>
+    <script>
+        function t(){
+        let x = document.getElementsByName("fav_language");
+         console.log(x) ;
+         console.log(typeof x); 
+      console.log(x.length);
+          for(let i =0 ; i< x.length; i++)
+         {
+             if (x[i].checked){
+                 console.log(x[i].type);
+                 console.log(x[i].id);
+                 console.log(x[i].name);
+                 console.log(x[i].value);
+
+          } }
+        // // } //*/ //let x = document.querySelectorAll('[name="fav_language"]');
+        }
+    </script>
+</body>
+
+</html>
