@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1"; action="mailto:haysamelamin@gmail.com" method="post" enctype="application/x-www-form-urlencoded">
+Name :<input type=" text" name="username" > <br>
+Age :<input type="number" name=" Age"><br>
+Address :<input type="text"  name="Address"><br>
+<input type="radio"  form="f1" id="Ch1" value="USA" >USA<br>
+<input type="radio" checked defaultChecked form="f1" id="Ch2" value="UK" >UK<br>
+<input type="radio"   form="f1" id="Ch3" value="FR" >FR<br>
+
+
+<input type="reset" value="Clear">
+<input type="submit" value="Send">
+<script>
+    let x = document.getElementById("Ch2");
+    document.write(x.defaultChecked)
+    document.write(x.value)
+</script>
+    </form>
+</body>
+</html>

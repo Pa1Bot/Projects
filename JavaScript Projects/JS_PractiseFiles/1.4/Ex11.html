@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let car = ["Nissan", "Hyundai", "Chevrolet", "Ford", "Mazda"];
+        let color = ["Red", "White", "Green", "Black"];
+        let year = [2021, 2022, 2023];
+        let count = 0;
+
+        for (let i = 0; i < car.length; i++) {
+
+            console.log(`Car :${car[i]}`);
+
+            for (let j = 0; j < color.length; j++) {
+                console.log(`  -    Color :${color[j]}`);
+            
+                for (let k = 0; k < year.length; k++) {
+                    console.log(` -----   Year: ${year[k]}`);
+                    count++ ; 
+                    //console.log(++count);
+                }     
+            }
+            console.log("########################################")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex13</title>
+    <style>
+        div{
+           border: solid 1px;
+           background-color : gainsboro;
+            margin: center;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+    <script>
+        function testColor(){
+            let el =document.getElementById("color").value ;
+            console.log(el);
+            switch(parseFloat(el)){
+                case 1 : 
+                document.body.style.backgroundColor = "red" ;
+                break;
+                case 2 : 
+                document.body.style.backgroundColor = "green" ;
+                break;
+                case 3 : 
+                document.body.style.backgroundColor = "yellow" ;
+                break;
+                case 4 : 
+                document.body.style.backgroundColor = "black" ;
+                break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Select your car color :    </h1>
+    <div>
+        <label for="color">Choose a car color:</label>
+        <select name="car_color" id="color">
+          <option value="1">Red</option>
+          <option value="2">Green</option>
+          <option value="3">Yellow</option>
+          <option value="4">Black</option>
+        </select>
+        <input type="text" name="" id="" >
+        <br><br>
+        <input type="button" value="test" onclick="testColor();"  >
+    </div>
+      
+      <p>Click the "Test" button to See your car Color</p>
+      
+      </body>
+      </html>
+</body>
+</html>
