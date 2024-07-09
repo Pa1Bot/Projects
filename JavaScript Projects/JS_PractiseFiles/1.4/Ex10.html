@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+    <script>
+        function checkIt(phrase) {
+            var userWord ="" ; var charone = ""; var charEnd ="";
+            var middle="" ; wordLength = 0 ; 
+            userWord= document.getElementById(phrase).value ; 
+            document.getElementById('user_word').innerHTML = userWord ; 
+             wordLength = userWord.length ; 
+             document.getElementById('word_size').innerHTML= wordLength ;
+             charone= userWord.substr(0,1) ; 
+             document.getElementById('First_char').innerHTML =charone ; 
+             charEnd = userWord.substr((wordLength-1),1);
+             document.getElementById('last_char').innerHTML = charEnd ; 
+             middle= userWord.substr(3,4); 
+             document.getElementById('the_middle').innerHTML= middle ; 
+         document.getElementById("loc").style.visibility="visible"; 
+             
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Enter a Word or a phrase :</h3>
+    <p><input type="text" name="user_word" id="the_word">
+    <input type="button" onclick="checkIt('the_word')" value="OK"></body></p> <!-- PAssing the id to the function -->
+   
+    <p>Word / Phrase information :<br>
+        <div id="loc" style="visibility: hidden">
+        you entered:<span id ="user_word">&nbsp;</span><br>
+        it has this many characters:<span id="word_size">&nbsp;</span><br>
+        the 1st character is : <span id="First_char">&nbsp;</span><br>
+        the last character is : <span id="last_char">&nbsp;</span><br>
+        the 4th , 5th, 6th and 7th characters are:<span id="the_middle">&nbsp;</span><br>
+    </div>
+    </p>
+</body>
+</html>
