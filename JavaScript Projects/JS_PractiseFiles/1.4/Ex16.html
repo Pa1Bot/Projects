@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Marks</title>
+    <style>
+        body{
+            width: 400px;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .fieldwrapper{
+            margin: 10px 0;
+        }
+        .fieldwrapper label, .fieldwrapper input, .submitwrapper input{
+            width: 46.5%;
+            margin: 0 1%;
+            display: inline-block;
+        }
+
+    </style>
+    <script>
+        // to validate form fields before submitting
+        function checkValues()
+        {
+            // fetch the values from the form
+            var sName = document.getElementById('sName').value;
+            var jsMarks = document.getElementById('jsMarks').value; // input by user 85 is treated as '85' - a string
+            // 300a -> 300
+            // a300 not convert to 300
+            // but both are validation errors
+            var htmlMarks = document.getElementById('htmlMarks').value;
+
+            // calculate the average
+            jsMarks = parseFloat(jsMarks); // convert string input '85' to number 85
+            htmlMarks = parseFloat(htmlMarks);
+            var averageMarks = (jsMarks + htmlMarks)/2;
+
+            // create output string
+            var myOutput = `
+                            Thank you! <br>
+                            Your name: ${sName} <br>
+                            Your average: ${averageMarks.toFixed(2)}
+            `;
+            // write output to the browser
+            document.getElementById('results').innerHTML = myOutput;
+
+            return false; // stops the form from submitting to the server
+        }
+    </script>
+</head>
+<body>
+    <form action="process.html" onsubmit="return checkValues();" >
+        <div class="fieldwrapper">
+            <label for="sName">Student Name</label>
+            <input type="text" name="sName" id="sName">
+        </div>
+        <div class="fieldwrapper">
+            <label for="jsMarks">JavaScript Marks</label>
+            <input type="text" name="jsMarks" id="jsMarks">
+        </div>
+        <div class="fieldwrapper">
+            <label for="htmlMarks">HTML Marks</label>
+            <input type="text" name="htmlMarks" id="htmlMarks">
+        </div>
+        <div class="submitwrapper">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Check Average">
+        </div>
+    </form>
+    <div id="results"></div>
+</body>
+</html>
