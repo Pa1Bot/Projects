@@ -1,0 +1,49 @@
+body{
+  text-align: center;
+}
+.parent{
+  display: inline-flex;
+}
+  #product{
+    height: 250px;
+    width: 500px;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+  } 
+  #receipt{
+    height: 270px;
+    width: 350px;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 25px;
+    font-weight: bold;
+    border-radius: 20px;
+  } 
+  #tab1{
+    width: 500px;
+  }
+  #tab2{
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+
+  p {
+    display: inline-block;
+  }
+  #checkout, #tab2, #a, #s, #be, #bk, #r{
+    visibility: hidden;
+  }
+  #rc, #cname{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  #tab2 td{
+    border: 1px solid black;
+    margin: 0;
+    width: 100px;
+    text-align: right;
+  }
