@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Fruits</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Organic Fruits</h1>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <div class="parent">
+            <div id="product">
+                <h2>Give Yourself a boost!</h2>
+                <table id="tab1">
+                    <tr>
+                        <td id="appN">Green Apple- $3</td>
+                        <td><button id="appleButton" value="Green Apple" onclick="addToCartApple()">Add to Cart</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="sbN">Strawberries- 3.4</td>
+                        <td><button id="strawberryButton" value="Strawberries" onclick="addToCartSB()">Add to
+                                Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td id="blueN">Blueberries- $3.5</td>
+                        <td><button id="blueberryButton" value="Blue Berry" onclick="addTocartBlueberry()">Add to
+                                Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td id="blackN">Blackberries- $3.6</td>
+                        <td><button id="blackberryButton" value="Black Berry" onclick="addTocartBlackberry()">Add to
+                                Cart</button></td>
+                    </tr>
+                    <tr>
+                        <td id="raspN">Raspberries- $3.2</td>
+                        <td><button id="raspberryButton" value="Rasp Berry" onclick="addTocartRaspberry()">Add to
+                                Cart</button></td>
+                    </tr>
+                </table>
+                <button id="checkout" value="Checkout" onclick="checkOut()">Chekout</button>
+                <!-- <span id="checkOutButton"></span>  -->
+            </div>
+            <div id="receipt">
+                <h2 id="rc">Receipt</h2>
+                <br>
+                <h3 id="cname"></h3>
+                <br>
+                <table id="tab2">
+                    <!-- displaying product details -->
+                    <tr id="a" height: 0.001px>
+                        <td>Green Apple</td>
+                        <td id="appQuantity"></td>
+                        <td id="appTot"></td>
+                    </tr>
+                    <tr id="s" height: 0.001px>
+                        <td>Strawberry</td>
+                        <td id="sQuantity"></td>
+                        <td id="sTot"></td>
+                    </tr>
+                    <tr id="be" height: 0.001px>
+                        <td>Blueberry</td>
+                        <td id="beQuantity"></td>
+                        <td id="beTot"></td>
+                    </tr>
+                    <tr id="bk" height: 0.001px>
+                        <td>Blackberry</td>
+                        <td id="bkQuantity"></td>
+                        <td id="bkTot"></td>
+                    </tr>
+                    <tr id="r" height: 0.001px>
+                        <td>Raspberry</td>
+                        <td id="rQuantity"></td>
+                        <td id="rTot"></td>
+                    </tr>
+                    <!-- Displaying GSt -->
+                    <tr>
+                        <td colspan="2">GSt@13%</td>
+                        <td id="gst"></td>
+                    </tr>
+                    <!-- Displaying total price -->
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="tot"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
