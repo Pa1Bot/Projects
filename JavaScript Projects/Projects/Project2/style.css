@@ -1,0 +1,39 @@
+/* body{
+    color: white;
+    background: black;
+} */
+.container{
+    text-align: -webkit-center;
+    font-family: sans-serif;
+}
+.sec{
+    margin:black;
+    padding: 20px;
+    border: 3.5px solid black;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    font-weight: bold;
+}
+label, input{
+    padding: 5px;
+    margin: 10px;
+}
+label{
+    float: left;
+}
+input{
+    border: groove;
+}
+#checkout{
+    height: 40px;
+    width: 60%;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border:none;
+}
+span{
+    color: red;
+    font-size: smaller;
+}
