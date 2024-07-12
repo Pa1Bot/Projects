@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="receipt.html" method="post" enctype="text/plain">
+            <head>
+                <h1>Conestoga Garage Sale</h1>
+                <h2>Raising money for The Frontline Fund</h2>
+            </head>
+            <main>
+                <div class="sec">
+                    <div id="sec1">
+                        <label for="input">Name</label>
+                        <input type="text" name="Name" id="cname" class="cinp" placeholder="First Last">
+                        <br>
+                        <span id="mand1"></span>
+                        <br>
+                        <label for="input">Email</label>
+                        <input type="text" name="Email" id="cemail" class="cinp" placeholder="email@domain.com">
+                        <br>
+                        <span id="mand2"></span>
+                        <br>
+                        <label for="input">Credit Card Number</label>
+                        <input type="text" name="Credit" maxlength="19" id="ccnum" class="cinp" placeholder="xxxx-xxxx-xxxx-xxxx">
+                        <br>
+                        <span id="ccNumError"></span>
+                        <br>
+                        <label for="input">Credit Card Expiry Month</label>
+                        <input type="text" name="month" id="ccmon" class="cinp" placeholder="MMM">
+                        <br>
+                        <span id="ccMonthError"></span>
+                        <br>
+                        <label for="input">Credit Card Expiry Year</label>
+                        <input type="number" name="" id="ccyr" class="cinp" placeholder="yyyy">
+                        <br>
+                        <span id="ccYearError"></span>
+                    </div>
+                    <div id="sec2">
+                        <h3>Buy generously</h3>
+                        <label for="input">Number of Water Bottles ($5)</label>
+                        <input type="text" name="" id="bottle"  class="qnt" placeholder="10">
+                        <br>
+                        <span id="bottleError"></span>
+                        <br>
+                        <label for="input">Number of Caps ($20)</label>
+                        <input type="text" name="" id="cap" class="qnt" placeholder="10">
+                        <br>
+                        <span id="capError"></span>
+                        <br>
+                        <label for="input">Number of Pens ($2)</label>
+                        <input type="text" name="" id="pen" class="qnt" placeholder="10">
+                        <br>
+                        <span id="penError"></span>
+                        <br>
+                        <label for="input">Number of Candy Bags ($10)</label>
+                        <input type="text" name="" id="candy" class="qnt" placeholder="10">
+                        <br>
+                        <span id="candyError"></span>
+                        <br>
+                        <label for="input">Number of Cup Cakes ($3)</label>
+                        <input type="text" name="" id="cake" class="qnt" placeholder="10">
+                        <br>
+                        <span id="cakeError"></span>
+                        <br>
+                        <span id="error"></span>
+                    </div>
+                    <input type="button" value="Checkout" id="checkout" onclick="checkOut()">
+                </div>
+                <div id="receipt1"></div>
+            </main>
+            <footer>
+
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>
