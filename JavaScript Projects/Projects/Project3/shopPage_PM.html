@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="style_PM.css">
+    <script src="script_PM.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="container" id="form">
+            <form action="shopPage_PM.html" method="post" enctype="text/plain" onsubmit="return receipt()">
+                <div>
+                    <h1>Product and Contact details</h1>
+                </div>
+                <div>
+                    <label for="Number of Shirts">Number of T-shirts</label>
+                    <input type="text" class="qnt" name="Number of Shirts">
+                    <p id="cTshirtsError" class="error"></p>
+                </div>
+                <div>
+                    <label for="Number of Jackets">Number of Jackets</label>
+                    <input type="text" class="qnt" name="Number of Jackets">
+                    <p id="cJacketsError" class="error"></p>
+                </div>
+                <div>
+                    <label for="Number Of Caps">Number of Caps</label>
+                    <input type="text" class="qnt" name="Number Of Caps">
+                    <p id="cCapsError" class="error"></p>
+                </div>
+                <div>
+                    <label for="Customer Name">Customer Name</label>
+                    <input type="text" class="cinp" name="Customer Name">
+                    <p id="cNameError" class="error"></p>
+                </div>
+                <div>
+                    <label for="Customer Phone">Customer Phone</label>
+                    <input type="text" id="cPhone" class="cinp" name="Customer Phone">
+                    <p id="cPhoneError" class="error"></p>
+                </div>
+                <div>
+                    <label for="">Province drop list</label>
+                    <select name="Province drop list" id="" class="cinp">
+                        <option disabled selected value> -- select an option -- </option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="BC">BC</option>
+                        <option value="Manitoba">Manitoba</option>
+                    </select>
+                    <p id="cProvinceError" class="error"></p>
+                </div>
+                <p id="qtyError" class="error"></p>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="receiptHeading"></div>
+            <div id="receipt"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
