@@ -1,0 +1,25 @@
+.container{
+    border: 2px solid black;
+    margin: 10%;
+    padding: 10px;
+    /* background-color: black;
+    color: white; */
+}
+label{
+    width: 130px;
+    display: inline-block;
+}
+label,input, select{
+    padding: 5px;
+    margin: 5px;
+}
+button{
+    text-align: center;
+    width: 150px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
+    margin-left: 55px;
+    margin-top: 10px;
+}
