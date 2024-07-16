@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="container"> 
+    <section>
+        <% if (invoiceData) { %>
+            <h1>Invoice Receipt</h1>
+            <h2>Customer Information: </h2>
+            <table>
+              <tr>
+                <td>Name:</td>
+                <td><%= invoiceData.name %></td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td><%= invoiceData.address %></td>
+              </tr>
+              <tr>
+                <td>City:</td>
+                <td><%= invoiceData.city %></td>
+              </tr>
+              <tr>
+                <td>Province:</td>
+                <td><%= invoiceData.province %></td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td><%= invoiceData.phone %></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><%= invoiceData.email %></td>
+              </tr>
+            </table>
+
+    <!-- Product data -->
+    <h2>Products:</h2>
+    <% if (invoiceData.productData && invoiceData.productData.length > 0) { %>
+    <table>
+      <% invoiceData.productData.forEach(product => { %>
+      <tr>
+        <td><%= product.name %></td>
+      </tr>
+      <% }); %>
+    </table>
+    <% } else { %>
+    <p>No products available.</p>
+    <% } %>
+
+    
+    <p>Products Price: $<%= invoiceData.productPrice %></p>
+    <p>Sales Tax: <%= invoiceData.salesTax %>%</p>
+    <p>Total Price: $<%= invoiceData.totalPrice %></p>
+    <% } else { %>
+    <p>receipt data not available.</p>
+    <% } %>
+    </section>
+</body>
+</html>
