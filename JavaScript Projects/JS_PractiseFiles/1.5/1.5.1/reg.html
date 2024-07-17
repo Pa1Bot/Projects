@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg1</title>
+</head>
+<body>
+    <script>
+ // check if a string contains a specific pattern IP address - email 
+ // URL canada.org  - canada.org/ - http://canada.org/  - http://www.canada.org - https://www.canada.org /
+// Modifier i g  
+ let mystring="My Name is Sam , my family name is Lee  " ;
+ let regex = /Name/;    //pattren to match       
+ console.log(mystring.match(/Name/)) ;  // matches a string against a regular expression pattren - returns an array with match - null if no match 
+ console.log(mystring.match(regex)) ; 
+ regex1= /lee/i;       
+ console.log(mystring.match(regex1)) ; 
+ //Modifiers => flaga to enhanced the search
+ // i  case insensitive 
+ regex2 =/name/;
+ console.log(mystring.match(regex2)) ; 
+//  //g global 
+ regex3 = /is/ig ; 
+ console.log(mystring.match(regex3)) ;
+ 
+  
+  </script>
+</body>
+</html>

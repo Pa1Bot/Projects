@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg5</title>
+</head>
+<body>
+    <script>
+
+let myString = "The best things in life are free.  era  eye";      //s.m(r)
+let regex = /e/;                   
+let result = regex.test(myString);  // test method  RegExpObject.test(string) Returns true if it finds a match, otherwise false
+console.log(result) ; 
+
+
+if(/sam/.test("sami"));{
+    console.log(" my name is sami ")
+} 
+
+let regex2 = /e$/g;    //  Matches any string with e at the end of it
+console.log(myString.match(regex2)) ; 
+
+
+let regex3 = /\bt/ig;    //  Find a match at the beginning/end of a word, beginning like this: \bHI, end like this: HI\b
+console.log(myString.match(regex3)) ; 
+
+</script>
+</body>
+</html>

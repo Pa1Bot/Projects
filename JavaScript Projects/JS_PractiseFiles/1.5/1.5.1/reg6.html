@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg6</title>
+</head>
+<body>
+    <script>
+// n+ Matches any string that contains at least one
+//n*  Matches any string that contains zero or more occurrences of n
+// n? Matches any string that contains zero or one occurrences of n
+
+let email = "s@sd.ca haysam@gmail.com myemail@gmail.com aasd@yahoo.com $#@ds.com &ew@cd.com";
+let vemail =/\w+@\w+.\w+/ig ;  
+console.log(email.match(vemail)) ; 
+
+ let url= "https://google.com http://www.mywebsite.net web.com";
+let vurl=/(https?:\/\/(www.)?)?\w+.\w+/ig ;
+console.log(url.match(vurl)) ; 
+
+
+
+let vemail1 = /\w+@\w+.\W+/ig ; 
+console.log(email.match(vemail1)) ; 
+
+let url1= "https://google.com http://www.mywebsite.net web.com";
+let vurl1 = //ig
+console.log(url1.match(vurl1)) ;
+  
+
+let phone = prompt("Enter phone (123) 123-1234") ;
+let Vphone=/\(\d{3}\)\s\d{3}-\d{4}/g ;
+
+while(!(Vphone.test(phone))){
+  phone = prompt("Enter phone (123) 123-1234") ;
+} 
+
+console.log(`your phone no is  ${phone.match(Vphone)}`); 
+
+
+let Vphone1 = /\(\d{3}\)\s\d{3}-\d{4}/; 
+console.log(Vphone1.test(phone1)) ; 
+while (!(Vphone1.test(phone1)))
+{
+  phone1=  prompt("Enter phone (123) 123-1234") ;
+}
+alert(`your number is ${phone1}`) ; 
+
+// n{x}
+//n{}
+
+//  /(https?:\/\/(www.)?)?\w+.\w+/ig
+</script>
+</body>
+</html>
