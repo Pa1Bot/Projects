@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg3</title>
+</head>
+<body>
+    <script>
+//Brackets       
+// [a-z]  [^a-z]  [A-Z]  [^A-Z] [abc] [^abc] [0-9] [^0-9]
+
+ let mystring="aAvcssSwe@#$vDsRseb^$%324" ;
+ let atozsmall = /[a-z]/g;    // a to z small letters
+ console.log(mystring.match(atozsmall));  
+
+ let notatozsmall = /[^a-z]/g;    // not a to z 
+ console.log(mystring.match(notatozsmall)); 
+
+ let AtoZcap =/[A-Z]/g ;          // A to Z  capital
+ console.log(mystring.match(AtoZcap)) ; 
+
+ let somechar = /[css]/g ; 
+ console.log(mystring.match(somechar)) ; 
+
+ let notsomechar = /[^cs]/g ; 
+ console.log(mystring.match(notsomechar)) ;
+ 
+ let allLetters =//;      // All Letters capital and small letters
+ console.log(mystring.match(allLetters)) ;
+ 
+ let allSpchar =//;      // special characters ^
+ console.log(mystring.match(allSpchar)) ;
+
+  </script>
+</body>
+</html>
