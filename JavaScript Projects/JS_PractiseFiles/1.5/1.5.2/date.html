@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+<body>
+    <script>
+        let d1 = new Date() ;
+       console.log(d1) ; 
+       console.log(d1.getDate());
+       console.log(d1.getMonth());
+       console.log(d1.getFullYear());
+       console.log(d1.getHours());
+       console.log(d1.getMinutes());
+       console.log(d1.getSeconds());
+       console.log(d1.getMilliseconds()) ;
+       console.log(d1.getTime());
+       
+       let sec= d1.getTime() / 1000 ; 
+       console.log(sec); 
+       let min = sec/60; 
+       console.log(min);
+       let h = min/60 ;
+       console.log(h);
+       let d = h/24 ;
+       console.log(d); 
+       let mon = d / 30 ; 
+       console.log(mon); 
+       let y = mon / 12 ;
+       console.log(y); 
+      
+function f1(){
+    document.body.style.background= "red" ;
+}
+
+setTimeout(()=>{console.log("After 3 sec ")} , 3000);
+    </script>
+</body>
+</html>

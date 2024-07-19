@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loc</title>
+    <script>
+              function dis() {
+            let na = document.forms["f1"]["name1"]["value"];
+            let ag1 = document.forms.f1["age1"]["value"];
+            let tab = `<table border="1" style="border-collapse: collapse;"><tr><td>${na}</td><td>${ag1}</td></tr></table>`;
+            document.getElementById("result").innerHTML = tab;
+            return false
+        }
+    </script>
+    <style>
+        .divcss {
+            margin: 40px;
+            padding: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> JavaScript</h1>
+    <script>
+        function dis() {
+            let out = "<table>";
+            for (let i = 0; i < 9; i++) {
+                out += "<tr>";
+                for (let j = 0; j < 9; j++) {
+                    out += `<td>${i}</td>`;
+                }
+                out += `</tr>`;
+            }
+            out += `</table>`;
+                document.getElementById("result").innerHTML=out; 
+                return false
+
+        }
+  
+
+    </script>
+    <table border="1" style="border-collapse: collapse;"></table>
+    <form action="" name="f1" onsubmit="return  dis();">
+        <div class="divcss">
+            <label for="name1">Name :</label>
+            <input type="text" name="name1" id="n1"><br>
+            <label for="age1"> Age :&nbsp;&nbsp;</label>
+            <input type="text" name="age1" id="ag"><br>
+            <input type="submit" name="sub" id="sub1" value="Send">
+            <input type="reset" name="res" id="res1" value="Clear">
+        </div>
+    </form>
+    <div id="result"> </div>
+</body>
+
+</html>

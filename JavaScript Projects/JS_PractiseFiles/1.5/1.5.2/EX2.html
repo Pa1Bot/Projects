@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1 = 10 ;
+        let b1 = 20 ; 
+        console.log(`from global  ${a1}`);
+        console.log(`from global ${b1}`);
+function out1() {
+    var a1 = 30 ;
+    let b1 = 40 ;
+    console.log(`function -From global ${a1}`);
+    console.log(`function from global ${b1}`); 
+  
+}
+out1() ; 
+    console.log(`from global  ${a1}`);
+    console.log(`from global  ${b1}`);
+
+//Block Scope 
+
+var x = 10  ;
+if (5===5){
+    var x = 20 ;   //   changed the value and  //what if let
+    console.log(`form block ${x}`); 
+}
+console.log(`form global ${x}`) ;
+let x12212  = 300 ; 
+
+x12211 =4; 
+console.log(x12212) ; 
+al = 200 ;           
+console.log(al) ;     //Automatically Global 
+console.log(a1) ; 
+    </script>
+</body>
+</html>
