@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E1</title>
+    
+</head>
+<body>
+    <button id="B1" >Show Text</button>
+   
+    <script>
+        // built in function type 
+        console.log(typeof console.log)  ;  // what is the type of function 
+        
+    //    Function parameters
+    //    Default function parameters 
+        function sayHello (name,age = 4) {  // test for no value type // what if no par age || 0 //ECMA  =
+
+            console.log(`Hello ${name} your age is ${age}`);
+        }
+       
+        sayHello("Bob") ;  //function call //default = Undefinde 
+
+        function sayHello (name ,age =5 ) {  // test for no value type // what if no par age || 0 //ECMA  =
+
+     console.log(`Hello ${name} your age is ${age}`);
+ }
+
+ sayHello("Bob") ;  //function call //default = Undefinde 
+
+
+        function sum(...num){           // unreachable code 
+            let sum1 =0 ; 
+        //    console.log(typeof num) ;
+        //    console.log(Array.isArray(num))  ; 
+        //    console.log(num.length); 
+           for(let i =0 ; i<num.length ; i++)
+           {
+            sum1 += num[i] ; 
+           
+           }
+           console.log(sum1); 
+            // return num1 + num2 + num3;  
+            // console.log("After return statement") ;  
+            // // THIS IS AN unreachable code 
+        } 
+        console.log(sum(1,2,3 ,3 ,4 , 5));
+
+
+        //Rest Parameters  The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
+        function res(num1 , num2 ){
+            let sum = 0;              //Array.isArray()
+            sum = num1 + num2 //+num3 ;
+            console.log(sum) ; 
+        }
+        res(1,2 ) ; 
+
+        function res(...num  ){
+            let a ="my name is sam"
+            console.log(num);
+            console.log(typeof num) ; 
+            console.log(Array.isArray(num)) ;
+           console.log( num.length) ; 
+          let sum = 0 ;
+           for (let i= 0 ; i<num.length-1 ; i++)
+          {
+            sum += num[i] ; 
+
+          } 
+        console.log(sum ) ; 
+            // let sum = 0;              //Array.isArray()
+            // sum = num1 + num2 //+num3 ;
+            // console.log(sum) ; 
+        }
+        res(1,2,4,6,8,9 ) ; 
+        function showInfo(userN ="Un" ,Age="Un",rate=0, show ="Yes", ...sk ){
+            document.write("<div style='border: 1px solid blue;'>");
+            document.write(`<h2>Welcome, ${userN}</h2>`);
+            document.write(`<p>Age: ${Age}</p>`);
+            document.write(`<p> Hour Rate:$${rate}<p>`); 
+                if (show=="Yes"){
+                    console.log("Show Skills");      //${sk.join(" | ");
+                    document.write(`<P>${sk.join(" ____------_____")} </P>`)
+         
+              
+              }else{ 
+                    console.log("Do Not Show Skills"); 
+
+                }
+                document.write("</div>"); 
+                    
+                }
+               showInfo("Sam",22,22,"Yes", "HTML","CSS","JavaSc" ,"C#")
+                
+ RandPar("Name",Age,OPenToWork), RandPar(true,"Sam",22) , RandPar(22,"Sam",false) // Task 
+    //Anonymous function vs Named function 
+    // 1- calling 
+                    //  Name calling using Function name & Can be accessed befor initialization
+
+     fun2 ("Tim") ;
+    function fun2(par) {console.log(par);};
+    console.log(z()) ; 
+    let z = function (){ return 10; } ;
+    console.log(typeof z) ;  
+    
+    let x = (a,b)=>  {return a+b} ;
+    console.log(x(4,5)) ; 
+
+    
+    document.getElementById("B1").onclick = _ => document.write("Any text ") ; 
+    let z1  = function fun2 (){return 20 ;};
+    console.log(z1()); 
+    //var = function 
+
+    let sum1 = function (n1 , n2 ) { return n1+n2  ; } ;  //Anonymous function no name 
+    console.log(sum1(3,5 )) ;    // can not access befor initialization //run-time
+    
+    // Why Anonymous function
+
+  document.getElementById("B1").onclick = function(){console.log("From Anonymous Function ");}; 
+function fun2(p1){
+    console.log(p1);
+}
+
+    document.getElementById("B1").onclick = fun2("Bob"); 
+
+    //Nested Function
+
+// Arrow Function 
+// Regular Vs Arrow [Param + No Param]
+let print = function(){ return 10;} ; 
+console.log(print());
+
+let f1 = _ => console.log("Hello !!!") ; 
+let f2 = (x,y)=>{return x+y} ; 
+console.log( f2( 5,7)) ;
+
+let f3 = (...x) =>{console.log(x.join(" || "))}
+f3(2,4,6,8,9,0)
+f1() ; 
+
+//let print1 = () =>{}  // in one line drop {} + return  // _ vs () 
+
+// Multiple Lines
+ let print1 = () =>   10  ; 
+// let prin3 = na => na ; 
+ //let prin3 = (na) => {return na;} ; 
+ console.log( prin3(5)) ; 
+ 
+    </script>
+ 
+   
+</body>
+</html>
